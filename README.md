@@ -1,14 +1,14 @@
 Ecommerce - Clothing Store
 
 Overview
-Ecommerce is an interactive online clothing store designed to provide a seamless shopping experience for users. It features functionalities from browsing products to managing shopping carts and processing payments.
+- Ecommerce is an interactive online clothing store designed to provide a seamless shopping experience for users. It features functionalities from browsing products to managing shopping carts and processing payments.
 
 Features
-Ecommerce offers a range of features to ensure a smooth and engaging user experience:
-- Product Listing: Displays a list of available products with details such as name, description, price, and image.
-- Shopping Cart Management: Allows users to add or remove items from the cart and proceed to checkout.
-- Payment Processing: Enables users to complete their purchase securely by entering payment details.
-- Dynamic UI Updates: Utilizes JavaScript to dynamically update the user interface without requiring page reloads.
+- Ecommerce offers a range of features to ensure a smooth and engaging user experience:
+  - Product Listing: Displays a list of available products with details such as name, description, price, and image.
+  - Shopping Cart Management: Allows users to add or remove items from the cart and proceed to checkout.
+  - Payment Processing: Enables users to complete their purchase securely by entering payment details.
+  - Dynamic UI Updates: Utilizes JavaScript to dynamically update the user interface without requiring page reloads.
 
 Technologies Used
 - HTML and CSS: Used for structuring and designing the frontend, ensuring a responsive and visually appealing interface.
@@ -29,20 +29,15 @@ API Endpoints
 
 
 Running the Project
-1- Ensure you have Node.js and npm installed on your system. You can download and install them from the Node.js website.
+- Ensure you have Node.js and npm installed on your system. You can download and install them from the Node.js website.
 https://nodejs.org/
 
-2- Install dependencies:
-(Command)
-npm install express body-parser mysql2
+- Install dependencies: npm install express body-parser mysql2
 
-2- Start the server:
-(Command)
-node server.js
+- Start the server: node server.js
 
-3- Open the application:
-Navigate to http://localhost:3000 in your browser.
+- Open the application: Navigate to http://localhost:3000 in your browser.
 
 
 Conclusion
-Ecommerce provides a comprehensive solution for online clothing sales, featuring a user-friendly interface, secure payment processing, and dynamic content updates. It is an ideal platform for users seeking an easy and efficient shopping experience.
+- Ecommerce provides a comprehensive solution for online clothing sales, featuring a user-friendly interface, secure payment processing, and dynamic content updates. It is an ideal platform for users seeking an easy and efficient shopping experience.
