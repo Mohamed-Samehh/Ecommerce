@@ -32,9 +32,9 @@ Running the Project
 - Ensure you have Node.js and npm installed on your system. You can download and install them from the Node.js website.
 https://nodejs.org/
 
-- Install dependencies: npm install express body-parser mysql2
+- Install dependencies: write in the terminal "npm install express body-parser mysql2".
 
-- Start the server: node server.js
+- Start the server:  write in the terminal "node server.js".
 
 - Open the application: Navigate to http://localhost:3000 in your browser.
 
