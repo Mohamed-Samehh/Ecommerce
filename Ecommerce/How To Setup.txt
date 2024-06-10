@@ -5,6 +5,6 @@ Steps:
 2- Enter username "root" and leave the password empty.
 3- Create Database in PhpMyAdmin called "ecommerce".
 4- Click on import and choose the file in folder "Data" called "ecommerce".
-5- Ensure you have Node.js and npm installed on your system. You can download and install them from the Node.js website: https://nodejs.org/.
+5- Ensure you have Node.js and npm installed on your system. You can download and install them from the Node.js website: "https://nodejs.org/".
 6- Open the folder "Ecommerce_Project" in Visual Studio Code, then open a new terminal and run "npm install express body-parser mysql2" to install the necessary dependencies. After the installation is complete, start the Express.js server by running "node server.js".
 7- To run project write in browser "http://localhost:3000".
