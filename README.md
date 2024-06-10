@@ -29,14 +29,13 @@ API Endpoints
 
 
 Running the Project
-- Ensure you have Node.js and npm installed on your system. You can download and install them from the Node.js website.
-https://nodejs.org/
+- Ensure you have Node.js and npm installed on your system. You can download and install them from the Node.js website: "https://nodejs.org/".
 
 - Install dependencies: write in the terminal "npm install express body-parser mysql2".
 
 - Start the server:  write in the terminal "node server.js".
 
-- Open the application: Navigate to http://localhost:3000 in your browser.
+- Open the application: Navigate to "http://localhost:3000" in your browser.
 
 
 Conclusion
