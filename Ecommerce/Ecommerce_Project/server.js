@@ -17,7 +17,7 @@ db.connect((err) => {
     if (err) {
         throw err;
     }
-    console.log('Connected...');
+    console.log('Connected to database...');
 });
 
 app.get('/api/products', (req, res) => {
