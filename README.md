@@ -32,16 +32,6 @@
 - **Toggle Cart Status (POST `/api/toggle-cart`):** Toggles the cart status of a product. Request body should include `"productId"`.
 - **Process Payment (POST `/api/payment`):** Processes payment using provided payment details. Request body should include `"cardNumber"`, `"expiryDate"`, `"cvv"`, `"cardHolder"`, and `"totalAmount"`.
 
-## Running the Project
-
-- Ensure you have Node.js and npm installed on your system. You can download and install them from the Node.js website: `"https://nodejs.org/"`.
-
-- Install dependencies: write in the terminal `"npm install express body-parser mysql2"`.
-
-- Start the server: write in the terminal `"node server.js"`.
-
-- Open the application: Navigate to `"http://localhost:3000"` in your browser.
-
 ## Conclusion
 
 - Ecommerce provides a comprehensive solution for online clothing sales, featuring a user-friendly interface, secure payment processing, and dynamic content updates. It is an ideal platform for users seeking an easy and efficient shopping experience.
