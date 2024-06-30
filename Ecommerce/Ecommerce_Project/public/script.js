@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 data.forEach(product => {
                     const productDiv = document.createElement('div');
                     productDiv.classList.add('product');
-                    const imageUrl = product.image ? `data:image/jpeg;base64,${product.image}` : 'default-placeholder.png';
+                    const imageUrl = `data:image/jpeg;base64,${product.image}`;
                     productDiv.innerHTML = `
                         <img src="${imageUrl}" alt="${product.name}">
                         <h3>${product.name}</h3>
@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     `;
                     productsContainer.appendChild(productDiv);
                 });
-                document.getElementById('no-products-message').style.display = 'none';
             }
 
             document.querySelectorAll('.add-to-cart').forEach(button => {
