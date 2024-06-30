@@ -5,7 +5,8 @@
    - Access PhpMyAdmin from WampServer.
 
 2. **Login to PhpMyAdmin:**
-   - Use username `"root"` and leave the password field empty.
+   - Use Username `"root"` and leave the Password field empty.
+   - Make sure Server choice is set to `"MySQL"`.
 
 3. **Create Database:**
    - Create a new database named `"ecommerce"` in PhpMyAdmin.
