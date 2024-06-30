@@ -1,6 +1,6 @@
 ## Setting Up Database Server: WampServer with PhpMyAdmin (MySQL)
 
-1. **Run Wamp and Access PhpMyAdmin:**
+1. **Run WampServer and Access PhpMyAdmin:**
    - Start WampServer.
    - Access PhpMyAdmin from WampServer.
 
