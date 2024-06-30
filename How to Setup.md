@@ -1,8 +1,8 @@
 ## Setting Up Database Server: WampServer with PhpMyAdmin (MySQL)
 
 1. **Run Wamp and Access PhpMyAdmin:**
-   - Start Wamp.
-   - Access PhpMyAdmin from Wamp.
+   - Start WampServer.
+   - Access PhpMyAdmin from WampServer.
 
 2. **Login to PhpMyAdmin:**
    - Use username `"root"` and leave the password field empty.
