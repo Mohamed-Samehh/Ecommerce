@@ -143,9 +143,16 @@ form button:hover {
     display: block;
 }
 
-#no-products-message{
-    font-size: 32px;
-    margin: 8rem;
-    text-align: center;
-    display: block;
+#error {
+    width: 280px;
+    color: red;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 5px;
+    display: none;
+}
+
+h1 a{
+    color: whitesmoke;
+    text-decoration: none;
 }
