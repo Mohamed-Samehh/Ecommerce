@@ -1,8 +1,27 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const checkoutButton = document.getElementById('checkout-button');
+    
+    checkoutButton.addEventListener('click', () => {
+        fetch('/api/products?inCart=1')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to fetch cart data');
+                }
+                return response.json();
+            })
+            .then(data => {
+                window.location.href = 'payment.html';
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert("Failed to load cart data. Please try again.");
+            });
+    });
+
     fetch('/api/products?inCart=1')
         .then(response => {
             if (!response.ok) {
-                throw new Error('No products found');
+                throw new Error('No products in cart');
             }
             return response.json();
         })
@@ -13,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (product.inCart) {
                         const productDiv = document.createElement('div');
                         productDiv.classList.add('product');
-                        const imageUrl = product.image ? `data:image/jpeg;base64,${product.image}` : 'default-placeholder.png';
+                        const imageUrl = `data:image/jpeg;base64,${product.image}`;
                         productDiv.innerHTML = `
                             <img src="${imageUrl}" alt="${product.name}">
                             <h3>${product.name}</h3>
@@ -26,6 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
                 document.getElementById('checkout-button').style.display = 'block';
                 document.getElementById('empty-cart-message').style.display = 'none';
+            } else {
+                document.getElementById('checkout-button').style.display = 'none';
+                document.getElementById('empty-cart-message').style.display = 'block';
             }
 
             document.querySelectorAll('.remove-from-cart').forEach(button => {
@@ -42,15 +64,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     .then(data => {
                         if (data.success) {
                             this.parentElement.remove();
+                            if (cartProductsContainer.children.length === 0) {
+                                document.getElementById('checkout-button').style.display = 'none';
+                                document.getElementById('empty-cart-message').style.display = 'block';
+                            }
                         }
                     })
                     .catch(error => console.error('Error:', error));
                 });
-            });
-
-            const checkoutButton = document.getElementById('checkout-button');
-            checkoutButton.addEventListener('click', () => {
-                window.location.href = 'payment.html';
             });
         })
         .catch(error => console.error('Error:', error));
