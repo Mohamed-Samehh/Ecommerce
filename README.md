@@ -1,4 +1,4 @@
-# Ecommerce - Clothing Store
+# Ecommerce - Online Clothing Store
 
 ## Overview
 
