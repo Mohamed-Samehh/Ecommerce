@@ -21,7 +21,7 @@
 
 6. **Set Up Ecommerce Project:**
    - Open the folder `"Ecommerce_Project"` in Visual Studio Code.
-   - Open a new terminal and run `npm install express body-parser mysql2` to install the necessary dependencies.
+   - Open a new terminal and run `npm install` to install the necessary dependencies.
    - After the installation is complete, start the Express.js server by running `node server.js`.
 
 7. **Access Your Project:**
